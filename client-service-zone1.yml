@@ -14,3 +14,8 @@ endpoints:
   shutdown:
     enabled: true
     sensitive: false
+sample:
+  int:
+    property: 10
+  string:
+    property: git backend
