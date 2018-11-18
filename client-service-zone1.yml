@@ -1,12 +1,5 @@
 spring:
   profiles: zone1
-spring:
-  rabbitmq:
-    host: 192.168.99.100
-    port: 5672
-    username: guest
-    password: guest
-
 eureka:
   instance:
     metadataMap:
@@ -14,15 +7,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-server:  
-  port: ${PORT:8081}
-
-management:
-  security:
-    enabled: false
+spring:
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: guest
+    password: guest
     
-sample:
-  string:
-    property: Client Application
-  int:
-    property: 3
+server:  
+  port: 8081
+
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
