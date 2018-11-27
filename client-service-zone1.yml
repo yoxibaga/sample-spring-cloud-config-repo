@@ -16,7 +16,7 @@ endpoints:
     sensitive: false
 sample:
   int:
-    property: 320
+    property: 3120
   string:
     property: git backend bc
     
