@@ -7,6 +7,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/    
+  rabbitmq:
+    host: localhost
+    username: dc
+    password: 8f0ded16-2595-4b5c-b5d3-1fd9e4c42bbe
+    virtual-host: dc
 server:  
   port: 8081
 
