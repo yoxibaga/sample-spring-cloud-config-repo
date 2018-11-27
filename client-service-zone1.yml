@@ -19,3 +19,7 @@ sample:
     property: 312
   string:
     property: git backend
+    
+management:
+  security:
+    enabled: false
